@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Me – Nazifa</title>
+  <meta charset="UTF-8" />
+  <!-- Font & Icon Links -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
+<body class="contact-page">
+
+</head>
+<body>
+
+<!-- 🌿 Floating Emoji Leaves -->
+<div class="background">
+  <span class="emoji-leaf" style="left: 4%; animation-delay: 0s;">🌿</span>
+  <span class="emoji-leaf" style="left: 15%; animation-delay: 1s;">🍃</span>
+  <span class="emoji-leaf" style="left: 28%; animation-delay: 2.5s;">🌱</span>
+  <span class="emoji-leaf" style="left: 45%; animation-delay: 0.8s;">🍃</span>
+  <span class="emoji-leaf" style="left: 62%; animation-delay: 3.2s;">🌿</span>
+  <span class="emoji-leaf" style="left: 78%; animation-delay: 1.5s;">🌱</span>
+  <span class="emoji-leaf" style="left: 90%; animation-delay: 2.1s;">🍃</span>
+</div>
+
+<div class="header">
+  <a href="index.html" class="home-link">Home</a>
+  <h1>₊˚ʚ 🌱 ₊˚✧ ﾟ.Contact Me₊˚ʚ 🌱 ₊˚✧ ﾟ.</h1>
+</div>
+
+<nav>
+  <a href="personalinfo.html">Personal Information</a>
+  <a href="education.html">My Education</a>
+  <a href="hobby.html">My Hobby</a>
+  <a href="myskills.html">My Skills</a>
+  <a href="gallery.html">My Gallery</a>
+  <a href="contact.html">Contact Me</a>
+</nav>
+
+<div class="contact-container">
+  <div class="contact-item">
+    <a href="https://wa.me/60173075840" target="_blank" class="icon-circle">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="contact-text">+60 17-3075840</div>
+  </div>
+
+  <div class="contact-item">
+    <a href="https://www.instagram.com/nizsfzh" target="_blank" class="icon-circle">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <div class="contact-text">@nizsfzh</div>
+  </div>
+
+  <div class="contact-item">
+    <a href="mailto:2023421058@student.uitm.edu.my" class="icon-circle">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <div class="contact-text">2023421058@student.uitm.edu.my</div>
+  </div>
+</div>
+
+<p><center><class="music-tip">🎧 Tips : Click anywhere to start the music⋆˚✿˖°!</p><center>
+
+<audio id="background-music" autoplay muted loop>
+  <source src="audio/lofi.mp3" type="audio/mpeg">
+</audio>
+
+<div class="footer">
+  &copy; 2025 Nazifa💌
+</div>
+
+<script>
+  const music = document.getElementById("background-music");
+
+  function activateMusic() {
+    music.muted = false;
+    music.play();
+    document.removeEventListener("click", activateMusic);
+  }
+
+  document.addEventListener("click", activateMusic);
+</script>
+
+</body>
+</html>
